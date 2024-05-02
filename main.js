@@ -1,6 +1,6 @@
 function createConfetti() {
     const colors = ['#FFC0CB', '#FFD700', '#8A2BE2', '#00FF00', '#00BFFF', '#FF6347']; // Fun colors
-    const confettiCount = 400;
+    const confettiCount = 1000;
     const confettiWrapper = document.getElementById('confetti-wrapper');
 
     for (let i = 0; i < confettiCount; i++) {
@@ -23,10 +23,10 @@ function createConfetti() {
         const rotation = Math.random() * 360;
         const xEnd = Math.random() * (window.innerWidth / 2) - window.innerWidth / 4;
         const yEnd = window.innerHeight + 100;
-        const duration = Math.random() * 3.5 + 2;
+        const duration = Math.random() * 10 + 2;
 
         confetti.style.animation = `confetti-fall ${duration}s ease-in-out forwards`;
-        confetti.style.animationDelay = `${Math.random() * 25}s`; // Shorter delay
+        confetti.style.animationDelay = `${Math.random() * 70}s`; // Shorter delay
         confetti.style.transform = `translateY(${initialYPosition}vh) rotate(${rotation}deg)`;
 
         confettiWrapper.appendChild(confetti);
@@ -54,6 +54,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-var cardInside = document.querySelector('.cardInside');
-cardInside.innerHTML += '😸';
-

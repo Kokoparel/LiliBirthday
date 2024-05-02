@@ -163,6 +163,7 @@ body {
    
    .balloonFour:after {
     border-bottom: 10px solid #118ab2;
+    
    }
    
    .cardInside {
@@ -253,7 +254,7 @@ body {
   height: 80px;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   position: absolute;
-  animation: float 5s ease-in-out infinite; /* Animasi gerakan balon */
+  animation: float 4s ease-in-out infinite; /* Animasi gerakan balon */
 }
 
 /* Animasi getaran */
