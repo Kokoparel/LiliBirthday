@@ -54,4 +54,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+var cardInside = document.querySelector('.cardInside');
+cardInside.innerHTML += '😸';
 
