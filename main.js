@@ -1,6 +1,6 @@
 function createConfetti() {
     const colors = ['#FFC0CB', '#FFD700', '#8A2BE2', '#00FF00', '#00BFFF', '#FF6347']; // Fun colors
-    const confettiCount = 1000;
+    const confettiCount = 500;
     const confettiWrapper = document.getElementById('confetti-wrapper');
 
     for (let i = 0; i < confettiCount; i++) {
@@ -26,7 +26,7 @@ function createConfetti() {
         const duration = Math.random() * 10 + 2;
 
         confetti.style.animation = `confetti-fall ${duration}s ease-in-out forwards`;
-        confetti.style.animationDelay = `${Math.random() * 70}s`; // Shorter delay
+        confetti.style.animationDelay = `${Math.random() * 50}s`; // Shorter delay
         confetti.style.transform = `translateY(${initialYPosition}vh) rotate(${rotation}deg)`;
 
         confettiWrapper.appendChild(confetti);
